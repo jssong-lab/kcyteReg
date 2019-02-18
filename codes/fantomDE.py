@@ -4,15 +4,10 @@
 from __future__ import print_function
 import numpy as np
 import pandas as pd
-import sys
 from scipy.stats import  ttest_ind ,  mannwhitneyu
 from collections import OrderedDict
 from  statsmodels.stats.multitest import multipletests
 
-sys.path.insert(0 , "/Users/afinneg2/lib")
-
-from AFscripts.rnaSeqImputation.testDE import run_ttestInd , run_mannWhitneyU , \
-calc_foldChange , calc_foldChange_median, sort_signifFirst
 
 ########################################################################################################
 #### Utilities
