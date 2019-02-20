@@ -4,3 +4,4 @@
 __pycache__/
 *.py[cod]
 TODO.md
+.projectRC.bash
