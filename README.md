@@ -9,8 +9,11 @@ Finnegan A. _et al._"Single-cell transcriptomics reveals spatial and temporal tu
 `codes` — custom codes used for analyis
 
  + Single-cell imputation
+	+ `./codes/run_zinb.R`
+	+ `./codes/run_MAGIC.py`
  + Dimensionality reduction and clustering
  + Differential expression
+	+ `./codes/fantomDE.py`
  + Differential motif enrichment
  + Identification of gene and TF modules
  + Transcriptomic comparison of single-cell population with bulk BCC/SCC samples

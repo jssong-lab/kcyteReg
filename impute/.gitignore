@@ -1,0 +1,9 @@
+zinb/zinb_fit.RData
+zinb/zinb_wavese.RData
+zinb/genes_use.txt
+runData/
+demo/
+magic_counts_t4.csv
+magic_counts_t10.csv
+magic_counts_t4_cells.foreskin_genesGeq1Pct.kcyte.pkl
+magic_counts_t10_cells.foreskin_genesGeq1Pct.kcyte.pkl
