@@ -43,7 +43,7 @@ cat TFs_Klein.txt  TFs_fantom.txt | sort | uniq > kcyte_TFs.txt
 ## Write candid_TFs
 comm -23 <( cat TFs_fantom.txt | sort ) <( cat  TFs_Klein.txt | sort ) | sort | uniq  >  candid_TFs.txt 
 ## Write Kcyte_genes.txt
-cat Kcyte_TFs.txt genes_fantom.txt | sort | uniq > kcyte_genes.txt
+cat kcyte_TFs.txt genes_fantom.txt | sort | uniq > kcyte_genes.txt
 
 
 

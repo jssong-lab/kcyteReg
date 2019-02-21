@@ -1,0 +1,8 @@
+*.Rdata
+one.vs.rest/demo/
+one.vs.rest/clusterDE.xlsx
+one.vs.rest/*.csv
+BK.vs.DK/demo/
+BK.vs.DK/clusterDE.xlsx
+BK.vs.DK/*.csv
+oe/
