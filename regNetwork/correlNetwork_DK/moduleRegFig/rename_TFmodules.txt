@@ -1,0 +1,6 @@
+TFs_brown_1	TF Module 5
+TFs_red_1	TF Module 4
+TFs_gray_1	TF Module 2
+TFs_pink_1	TF Module 1
+TFs_yellow_1	TF Module 3
+TFs_green_1	TF Module 6

@@ -1,0 +1,6 @@
+genes_brown_1	Gene Module 6
+genes_cyan_1	Gene Module 1
+genes_gray_1	Gene Module 3
+genes_purple_1	Gene Module 4
+genes_yellow_1	Gene Module 2
+genes_yellow_2	Gene Module 5

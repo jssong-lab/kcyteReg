@@ -1,0 +1,4 @@
+genes_blue_3	Gene Module 1
+genes_gray_2	Gene Module 2
+genes_green_1	Gene Module 3
+genes_red_3	Gene Module 4
