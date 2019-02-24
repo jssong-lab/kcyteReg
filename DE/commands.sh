@@ -17,7 +17,6 @@ awk -v d=, -v f=22 'BEGIN{ FS=OFS=d }
 NR==FNR {map[$1] = $2; next} 
 { if ($f in map) {$f = map[$f];  print } }' $l $f_in | cut -f1,22 -d , | sort -t "," -k 2,2n -k 1,1 > $fo
 
-exit
 #######################################
 ## Write Rdata files for DE
 fi_rawCounts="../raw/rawCount_filtered_foreskin.kcyte.csv"
