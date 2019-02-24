@@ -9,22 +9,22 @@ Finnegan A. _et al._"Single-cell transcriptomics reveals spatial and temporal tu
 __`codes` — custom codes used for analyis__
 
  + Single-cell imputation
-  + `./codes/run_zinb.R`
-  + `./codes/run_MAGIC.py`
+	+ `./codes/run_zinb.R`
+	+ `./codes/run_MAGIC.py`
  + Dimensionality reduction and  cell clustering
-    + `./codes/cluster_spectral.py `and `./codes/run_specCluster.py`
-    + `./codes/run_PCA.py`
+ 	+ `./codes/cluster_spectral.py `and `./codes/run_specCluster.py`
+	+ `./codes/run_PCA.py`
  + Differential expression
-  + `./codes/fantomDE.py`
-  + `./codes/run_cluster_DE_subsetCells.R` 
+	+ `./codes/fantomDE.py`
+	+ `./codes/run_cluster_DE_subsetCells.R` 
  + Differential motif enrichment
-    + \*\*Fill in\*\* 
+	+ \*\*Fill in\*\* 
  + Identification of gene and TF modules
-    + `./codes/corrFuncs.py` and `/codes/run_calcCorr.py`
-    +  `./codes/run_clusterCoRegTFcorr.py` 
-    + `./codes/run_getClustMapBlocks_inconsistStat.py`
+	+ `./codes/corrFuncs.py` and `/codes/run_calcCorr.py`
+	+  `./codes/run_clusterCoRegTFcorr.py` 
+	+ `./codes/run_getClustMapBlocks_inconsistStat.py`
  + Transcriptomic comparison of single-cell population with bulk BCC/SCC samples
-    + *\*Fill in\*\* 
+	+ *\*Fill in\*\* 
  + And other miscellaneous scripts
 
 __Analysis and generation of results__ 
