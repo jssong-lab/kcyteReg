@@ -1,0 +1,2 @@
+Background letter frequencies
+A 0.24 C 0.26 G 0.26 T 0.24

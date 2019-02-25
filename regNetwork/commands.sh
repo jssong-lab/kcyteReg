@@ -5,7 +5,7 @@ set -euo pipefail
 ## Write TFs with binding motifs enriched in BK or DK SE's
 ##  + flatten motifs consisiting of TF dimers
 
-fi_motifs_arr=("../raw/motifsEnriched_SEs_BK.txt" "../raw/motifsEnriched_SEs_DK.txt" )
+fi_motifs_arr=("../motifAnalysis/MotifsEnriched_SEs_BK.txt" "../motifAnalysis/MotifsEnriched_SEs_DK.txt" )
 fo_arr=( "TFsEnriched_SEs_BK.expressed.txt"  "TFsEnriched_SEs_DK.expressed.txt" )
 genes_expressed="../setsGenes/kcyte_TFs.txt"
 
