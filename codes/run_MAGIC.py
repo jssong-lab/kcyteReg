@@ -12,7 +12,7 @@ import pandas as pd
 import sys
 from collections import OrderedDict
 import argparse
-from  magic.MAGIC_core import impute_fast ,  compute_markov
+from  magic.MAGIC import impute_fast ,  compute_markov
 import time
 
 #### Function definitions
@@ -35,7 +35,7 @@ def magic_progressive_t(data_df, dist_data_df , t_list,
     if runTimes:
         runTimes_dict = OrderedDict([])
         startcalc = time.time()
-    W = compute_markov(dist_data , k =k , epsilon = epsilon , distance_metric = 'euclidean' , ka =ka)
+    W = compute_markov(dist_data , knn =k , epsilon = epsilon , distance_metric = 'euclidean' , knn_autotune =ka)
     if runTimes:
         endcalc =  time.time()
         runTimes_dict["time:compute_markov (s)"] = "{:.2f}".format( endcalc - startcalc )
@@ -47,7 +47,7 @@ def magic_progressive_t(data_df, dist_data_df , t_list,
         if runTimes:
             startcalc=time.time()
         ## do imputation
-        data_new , W_t = impute_fast(data , W ,  t , W_t = W_t , 
+        data_new , W_t = impute_fast(data, L = W, t = t, L_t = W_t, 
                                      tprev = tprev, rescale_percent = rescale )
         if runTimes:
             endcalc = time.time()
