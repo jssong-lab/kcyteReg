@@ -1,12 +1,12 @@
 #!/bin/bash
 
 export nThreads=4
-export nWorkers=3
+export nWorkers=4   ## run with 18 cores
 
 export OPENBLAS_NUM_THREADS=$nThreads
 export OMP_NUM_THREADS=$nThreads
 export MKL_NUM_THREADS=$nThreads
-
+export NSLOTS=$nWorkers
 ##############################
 ## Run zinbwave 
 mkdir -p zinb

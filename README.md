@@ -25,7 +25,7 @@ __`codes` — custom codes used for analyis__
      +  `./codes/run_clusterCoRegTFcorr.py` 
      + `./codes/run_getClustMapBlocks_inconsistStat.py`
  + Transcriptomic comparison of single-cell population with bulk BCC/SCC samples
-     + *\*Fill in\*\* 
+     + see  ./BCC_SCC/BCC_SCC_Analysis.ipynb 
  + And other miscellaneous scripts
 
 __Analysis and generation of results__ 
@@ -47,8 +47,23 @@ __Analysis and generation of results__
 
 + `antiox` — Analysis of expression of genes annotated for antioxidant function across progressive differentiation stages
 
++ `BCC_SCC` — Transcriptomic comparisong of single-cell stages to DE patterns of BCC, SCC bulk data.
+ 
 __Misc__ 
 
 + `./raw` — contains files that are starting points for analysis. 
 
 + `./setsGenes` — Gene sets generated during analysis
+
+__Dependencies__
++ Requires python >=3.3, R >= ??, git
++ We recommend install required python packages into a virtual environment:
+	```bash
+	## In  kcyteReg directory run
+	python3 -m venv --prompt krUser .  
+	source bin/activate       ## use "deactivate" to leave environment
+	pip install -r requirements.txt 
+	./install_magic0.1.sh  ## installs appropriate version of magic
+	## Some script to install R libraries
+	```
++ To run scripts in `./motifAnalysis/` you will need to have FIMO (https:XXXX ) and bedtools (https:XXXX ) installed 
