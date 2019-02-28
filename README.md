@@ -5,7 +5,7 @@ Analysis scripts assciated with manuscript:
 Finnegan A. _et al._"Single-cell transcriptomics reveals spatial and temporal turnover of keratinocyte differentiation regulators."
 
 ## Repository Organization
-
+within the ./kcyteReg directory:
 __`codes` — custom codes used for analyis__
 
  + Single-cell imputation
@@ -21,7 +21,7 @@ __`codes` — custom codes used for analyis__
      + `./codes/rankMotifs.py`
      + `./codes/diffEnrich_motifs.py `
  + Identification of gene and TF modules
-     + `./codes/corrFuncs.py` and `/codes/run_calcCorr.py`
+     + `./codes/corrFuncs.py` and `./codes/run_calcCorr.py`
      +  `./codes/run_clusterCoRegTFcorr.py` 
      + `./codes/run_getClustMapBlocks_inconsistStat.py`
  + Transcriptomic comparison of single-cell population with bulk BCC/SCC samples
@@ -59,12 +59,10 @@ __Dependencies__
 + Requires python >=3.3, R >= ??, git
 + We recommend installing required python packages into a virtual environment:
 	```bash
-	## In  kcyteReg directory run
+	## In the project root diretory run:
 	python3 -m venv --prompt krUser .  
 	source bin/activate       ## use "deactivate" to leave environment
-	pip install -r requirements.txt 
-	./install_magic0.1.sh  ## installs appropriate version of magic
-	## Some script to install R libraries
+	pip install -r ./install/requirements.txt 
 	```
 + To install the appropriate version of MAGIC from github run
 	```bash
@@ -72,11 +70,11 @@ __Dependencies__
 	```
 + To setup R libraries and evironemntal vairables run
 	```bash
-	./install/setupR.sh local  ## remove "local" if you are no using the virtual environment (not recommended)
+	./install/setupR.sh local  ## remove "local" if you are not using the virtual environment (not recommended)
 	```
 + Set PYTHONPATH by running
 	```bash
 	source ./.projectRC.sh
 	```
 
-+ To run scripts in `./motifAnalysis/` you will need to have FIMO (https:XXXX ) and bedtools (https:XXXX ) installed 
++ To run scripts in `./motifAnalysis/` you will need to have FIMO (https:http://meme-suite.org/doc/fimo.html) and bedtools (https: https://bedtools.readthedocs.io/en/latest/content/installation.html) installed 
