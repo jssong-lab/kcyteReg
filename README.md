@@ -55,8 +55,8 @@ __Misc__
 
 + `./setsGenes` — Gene sets generated during analysis
 
-__Dependencies__
-+ Requires python >=3.3, R >= ??, git
+## Dependencies
++ Requires python >=3.3, R >= 3.4, git
 + We recommend installing required python packages into a virtual environment:
 	```bash
 	## In the project root diretory run:
@@ -68,7 +68,7 @@ __Dependencies__
 	```bash
 	 ./install/install_magic0.1.sh 
 	```
-+ To setup R libraries and evironemntal vairables run
++ To setup R libraries and evironmental vairables run
 	```bash
 	./install/setupR.sh local  ## remove "local" if you are not using the virtual environment (not recommended)
 	```
@@ -77,4 +77,4 @@ __Dependencies__
 	source ./.projectRC.sh
 	```
 
-+ To run scripts in `./motifAnalysis/` you will need to have FIMO (https:http://meme-suite.org/doc/fimo.html) and bedtools (https: https://bedtools.readthedocs.io/en/latest/content/installation.html) installed 
++ To run scripts in `./motifAnalysis/` you will need to have FIMO (http://meme-suite.org/doc/fimo.html) and bedtools ( https://bedtools.readthedocs.io/en/latest/content/installation.html) installed.
