@@ -57,7 +57,7 @@ __Misc__
 
 __Dependencies__
 + Requires python >=3.3, R >= ??, git
-+ We recommend install required python packages into a virtual environment:
++ We recommend installing required python packages into a virtual environment:
 	```bash
 	## In  kcyteReg directory run
 	python3 -m venv --prompt krUser .  
@@ -66,4 +66,17 @@ __Dependencies__
 	./install_magic0.1.sh  ## installs appropriate version of magic
 	## Some script to install R libraries
 	```
++ To install the appropriate version of MAGIC from github run
+	```bash
+	 ./install/install_magic0.1.sh 
+	```
++ To setup R libraries and evironemntal vairables run
+	```bash
+	./install/setupR.sh local  ## remove "local" if you are no using the virtual environment (not recommended)
+	```
++ Set PYTHONPATH by running
+	```bash
+	source ./.projectRC.sh
+	```
+
 + To run scripts in `./motifAnalysis/` you will need to have FIMO (https:XXXX ) and bedtools (https:XXXX ) installed 
