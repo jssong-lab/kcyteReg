@@ -6,17 +6,15 @@ projDir=$(pwd)
 
 R_MAX_NUM_DLLS=500
 echo "R_MAX_NUM_DLLS=500" > .Renviron
-echo "R_LIBS_USER=$projDir/lib/R/library" >> .Renviron
 if [ "$1" == "local" ]
 	then
-	echo installing locally and setting R_LIB in .Renviron
-	R_LIBS="$projDir/lib/R/library"
-	echo "R_LIBS=$R_LIBS" >> .Renviron
+	echo installing locally and setting R_LIBs_USER in .Renviron
+	echo "R_LIBS_USER=$projDir/lib/R/library" >> .Renviron
+	mkdir -p $projDir/lib/R/library
 	Rscript -e "readRenviron('.Renviron'); \
-.libPaths(Sys.getenv('R_LIBS_USER')); \
-install.packages( c('argparser', 'S4Vectors', 'openxlsx', 'Matrix', 'tibble'), repos='http://cran.us.r-project.org' ); \
+install.packages( c('argparser', 'S4Vectors', 'openxlsx', 'Matrix', 'tibble'), repos='http://cran.us.r-project.org', lib=Sys.getenv('R_LIBS_USER') ); \
 source('https://bioconductor.org/biocLite.R'); \
-biocLite( c('Seurat', 'SummarizedExperiment','zinbwave', 'BiocParallel', 'edgeR', 'limma','clusterExperiment' ) )"
+biocLite( c('Seurat', 'SummarizedExperiment','zinbwave', 'BiocParallel', 'edgeR', 'limma','clusterExperiment' ), lib=Sys.getenv('R_LIBS_USER')  )"
 
 else
 	echo "installing to default R library"
