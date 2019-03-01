@@ -13,7 +13,6 @@ etc/
 share/
 pyvenv.cfg
 pip-selfcheck.json
-commands.ref.sh
 *.Renviron
 *.Rprofile
 activate_rkUser.sh

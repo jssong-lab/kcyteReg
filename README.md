@@ -6,6 +6,7 @@ Finnegan A. _et al._"Single-cell transcriptomics reveals spatial and temporal tu
 
 ## Repository Organization
 within the ./kcyteReg directory:
+
 __`codes` — custom codes used for analyis__
 
  + Single-cell imputation
@@ -56,7 +57,7 @@ __Misc__
 + `./setsGenes` — Gene sets generated during analysis
 
 ## Dependencies
-+ Requires python >=3.3, R >= 3.4, git
++ Requires python >=3.3, R >= 3.4, git, graphviz (http://www.graphviz.org/) - a pygraphviz dependency which is not automaically installed
 + We recommend installing required python packages into a virtual environment:
 	```bash
 	## In the project root diretory run:
