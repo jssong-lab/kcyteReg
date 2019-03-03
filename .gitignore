@@ -16,3 +16,4 @@ pip-selfcheck.json
 *.Renviron
 *.Rprofile
 activate_rkUser.sh
+moreAnalysis/

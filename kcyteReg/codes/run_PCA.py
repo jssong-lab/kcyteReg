@@ -13,9 +13,8 @@ import pandas as pd
 import sys
 import pickle
 from sklearn.decomposition import PCA
-sys.path.insert(0 , "/Users/afinneg2/lib")
 import time
-from AFutils.parsers.misc import readListFromFile
+from IOutils import readListFromFile
 
 
 #### Function definitions #####################################

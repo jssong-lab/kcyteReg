@@ -12,8 +12,7 @@ import pandas as pd
 import argparse
 import sys
 import os
-sys.path.insert(0 , "/Users/afinneg2/lib")
-from AFutils.parsers.misc import readListFromFile
+from IOutils import readListFromFile
 
 ####### Function definitions #######################################################
 def parseSynonFile(fname ,  officialSymCol , synonCol, synonSep = "|", sep ="\t", header = 0 ):
