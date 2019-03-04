@@ -106,9 +106,9 @@ tail -n+2 $f_in | awk -F , -v c=$lfc_thresh -v p=$pAdj_thresh '{ if ( ( $2 + 0.0
 ### Subract DE sets from kcyte genes
 mkdir -p ./BK.vs.DK/regNetwork_targets/
 f_o="./BK.vs.DK/regNetwork_targets/kcyteGenes_subtract_DEup.DK.txt"
-comm -23 <( cat ../setsGenes/kcyte_genes.txt | sort  ) <( cat ./BK.vs.DK/DK_de_lfc.geq0.25.txt | sort ) | sort | uniq > $f_o 
+comm -23 <( cat ../../setsGenes/kcyte_genes.txt | sort  ) <( cat ./BK.vs.DK/DK_de_lfc.geq0.25.txt | sort ) | sort | uniq > $f_o 
 
 f_o="./BK.vs.DK/regNetwork_targets/kcyteGenes_subtract_DEup.BK.txt"
-comm -23 <( cat ../setsGenes/kcyte_genes.txt | sort  ) <( cat ./BK.vs.DK/BK_de_lfc.geq0.25.txt | sort ) | sort | uniq > $f_o  
+comm -23 <( cat ../../setsGenes/kcyte_genes.txt | sort  ) <( cat ./BK.vs.DK/BK_de_lfc.geq0.25.txt | sort ) | sort | uniq > $f_o  
 
 

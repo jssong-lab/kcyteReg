@@ -5,3 +5,5 @@ BK.vs.DK/demo/
 BK.vs.DK/clusterDE.xlsx
 BK.vs.DK/*.csv
 oe/
+demo/
+demo/commands.sh

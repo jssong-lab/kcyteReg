@@ -9,7 +9,7 @@ minSummedPcts="1:2,2:1,3:1,4:2,5:1,6:1,7:15,8:10"
 fo_cells=cellNames.passFilter.txt
 fo_summary=filterSummary.pdf
 
-#python ../codes/run_filterCellsSummedExpr.py  --fi_expr $fi_expr --fi_stageIDs $fi_stageIDs --minSummedPcts $minSummedPcts --fo_cells $fo_cells --fo_summary $fo_summary
+python ../codes/run_filterCellsSummedExpr.py  --fi_expr $fi_expr --fi_stageIDs $fi_stageIDs --minSummedPcts $minSummedPcts --fo_cells $fo_cells --fo_summary $fo_summary
 
 ##############################################################################
 ### WRITE CORRELATION FILES -- logTpm
